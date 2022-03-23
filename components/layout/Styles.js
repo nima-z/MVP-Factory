@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Header = styled.div`
@@ -16,20 +18,20 @@ export const Header = styled.div`
 `;
 
 export const Main = styled.div`
-  height: 85vh;
+  min-height: 85vh;
   display: flex;
+  align-items: flex-start;
 `;
 
 export const Content = styled.div`
   flex-grow: 1;
-  background-color: green;
 `;
 
 export const Footer = styled.div`
   height: 5vh;
   display: flex;
   align-items: center;
-  padding-left: 5rem;
+  padding-left: 5.5rem;
   gap: 0.5rem;
   font-weight: 700;
   color: #005b96;
